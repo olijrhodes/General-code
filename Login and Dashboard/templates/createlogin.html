@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+{%block body%}
+    <div class="login-screen">
+        <h1>Create ToKa Account</h1>
+
+        <div class="login-form">
+            <form action="{{url_for('createlogin')}}" method="post">
+                <input type="text" name="email" placeholder="Email" />
+                <br>
+                <input type="text" name="password" placeholder="Password" />
+                <br>
+                <input type="text" name="password1" placeholder="Re-Enter Password" />
+                <br>
+                <input type="submit" value="submit" />                
+            </form>
+            <a class="button" href="/">Back</a>
+        </div>
+
+    </div>
+{%endblock%}
