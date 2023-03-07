@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="forms">
+    <form action="{{url_for('searchrec')}}" method="post">
+        <h3>Student Information</h3>
+        Name<br>
+        <input type="text" name="search_name" /><br>
+</div>
+{% endblock %}

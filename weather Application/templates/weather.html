@@ -1,0 +1,30 @@
+{%extends "base.html"%}
+
+{%block head%}Weather{%endblock%}
+
+{%block body%}
+<div class="table-container">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <td>Temperature</td>
+                <td>Feels Like</td>
+                <td>Pressure</td>
+                <td>Humidity</td>
+                <td>Description</td>
+                <td>Air Quality Index</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{temp}}</td>
+                <td>{{feels_like}}</td>
+                <td>{{tempPresHumi.pressure}}</td>
+                <td>{{tempPresHumi.humidity}}</td>
+                <td>{{desc.description}}</td>
+                <td>{{AQI}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{%endblock%}

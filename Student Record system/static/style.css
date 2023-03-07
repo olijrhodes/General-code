@@ -1,0 +1,78 @@
+*{
+    font-family: bahnschrift;
+}
+
+
+h1{
+    text-align: center;
+    font-family: bahnschrift;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.adding-title h3{
+    font-family: bahnschrift;
+    font-size: 30px;
+}
+
+.search-table table{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.search-table-headers{
+    text-align: center;
+    font-weight: bold;
+}
+
+table,th,td{
+    border: 1px solid;
+}
+
+td, th{
+    padding: 5px;
+    font-size: 25px;
+}
+
+.main-btn-container a{
+    text-decoration: none;
+    background-color: #4984E9;
+    text-align: center;
+    color: white;
+    display: inline;
+    padding: 20px 60px;
+}
+
+.main-btn-container{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.main-btn-container a:hover{
+    background-color: #1C65E3;
+}
+
+.student-list-tbl table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-student-form{
+    text-align: center;
+}
+
+input, textarea{
+    border-radius: 5px;
+    border: 2px solid grey;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.add-name, .add-id, .add-address, .add-city{
+    font-weight: bold;
+}
+
+.forms{
+    text-align: center;
+}

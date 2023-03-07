@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="forms">
+<form action="{{url_for('editrec')}}" method="post">
+    <h3>Student Information</h3>
+    Student ID<br>
+    <input type="text" name="edit_id" /><br>
+</div>
+{% endblock %}

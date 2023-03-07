@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="edit-student-form">
+    <form action="{{url_for('commitchanges')}}" method="post">
+
+        <div class="adding-title">
+            <h3>Edit Database</h3>
+        </div>
+
+        <div class="edit-name">Name</div><br>
+        <input type="text" name="edit_name" value={{(msg[0])[0]}} /><br>
+
+        <div class="edit-id">ID</div><br>
+        <input type="text" name="edit_id" value={{(msg[0])[1]}} disabled/><br>
+
+        <div class="edit-address">Address</div><br>
+        <textarea name="edit_address">{{(msg[0])[2]}}</textarea><br>
+
+        <div class="edit-city">City</div><br>
+        <input type="text" name = "edit_city" value={{(msg[0])[3]}} /><br>
+
+        <input type="submit" value="submit" /><br>
+    </form>
+</div>
+
+{% endblock %}

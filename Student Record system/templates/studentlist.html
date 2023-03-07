@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="student-list-tbl">
+        <table>
+            <thead>
+                <td>Name</td>
+                <td>ID</td>
+                <td>Address</td>
+                <td>City</td>
+            </thead>
+
+            {% for row in rows %}
+                <tr>
+                    
+                    <td>{{row["name"]}}</td>
+                    <td>{{row["id"]}}</td>
+                    <td>{{row["addr"]}}</td>
+                    <td>{{row["city"]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+{% endblock %}
